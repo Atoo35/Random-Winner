@@ -1,0 +1,16 @@
+{
+  "name": "random-winner",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ atoo35/random-winner",
+    "create-local": "graph create --node http://localhost:8020/ atoo35/random-winner",
+    "remove-local": "graph remove --node http://localhost:8020/ atoo35/random-winner",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 atoo35/random-winner"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.30.4",
+    "@graphprotocol/graph-ts": "0.27.0"
+  }
+}
